@@ -7,5 +7,5 @@ import retrofit2.http.GET
 interface PhoneApi {
 
     @GET("products")
-    fun fetAllPhonr(): Call<List<PhontEntityItem>>
+    fun fetAllPhone(): Call<List<PhontEntityItem>>
 }
