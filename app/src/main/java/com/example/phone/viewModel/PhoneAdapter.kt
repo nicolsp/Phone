@@ -19,7 +19,7 @@ class PhoneAdapter( val mPassTheData: PassTheData): RecyclerView.Adapter<PhoneAd
     }
 
     inner class PhoneViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val id = itemView.tv1
+       // val id = itemView.tv1
         val itemImage = itemView.imageView
         val name = itemView.tv2
         val price = itemView.tv3

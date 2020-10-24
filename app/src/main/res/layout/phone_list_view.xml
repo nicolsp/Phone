@@ -18,33 +18,27 @@
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <TextView
-        android:id="@+id/tv1"
-        android:layout_width="155dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/tv2"
+        android:layout_width="181dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="44dp"
         android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv2"
-        android:layout_width="155dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="40dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/tv1" />
-
-    <TextView
         android:id="@+id/tv3"
-        android:layout_width="159dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="178dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="28dp"
         android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView"
