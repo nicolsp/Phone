@@ -32,8 +32,8 @@ class SecondFragment : Fragment() {
     }
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_second, container, false)
@@ -42,23 +42,23 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        mId2.let {
-            mViewModel2.obtainPhoneByID(mId2).observe(viewLifecycleOwner, Observer {
-              //  details = it
-                context?.let { it1 -> Glide.with(it1).load(it.image).into(imageView2) }
+        mViewModel2.obtainPhoneByID(mId2).observe(viewLifecycleOwner, Observer {
+            if (it != null) {
+                Glide.with(this).load(it.image).into(imageView2)
+
                 tv5.text = it.description
-                tv6.text = it.id.toString()
-                tv7.text = it.lastPrice.toString()
-                tv8.text = it.name
+                tv6.text = it.lastPrice.toString()
+                tv7.text = it.name
+                tv8.text = it.price.toString()
 
-            })
-            Glide.with(view.context)
-            tv8.text = it.toString()
 
-        }
+            }
+        })
+
 
         view.findViewById<Button>(R.id.button_second).setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
         }
     }
 }
+
